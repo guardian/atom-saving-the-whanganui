@@ -1,5 +1,31 @@
 var el = document.createElement('script');
 
+function injectStyle(n) {
+  let extraStylesheet = document.createElement('link');
+  extraStylesheet.setAttribute('rel', 'stylesheet');
+  extraStylesheet.setAttribute('type', 'text/css');
+  extraStylesheet.setAttribute('href', "<%= path %>/" + n);
+
+  let parentBody = parent.document.body;
+  parentBody.appendChild(extraStylesheet);
+}
+
+injectStyle('article.css');
+
+function getStandy() {
+
+  let parentBody = parent.document.body;
+  let pStandyWrapper = parentBody.querySelector('.content__standfirst--immersive-article');
+
+  let fStandy = document.querySelector('.whanganui__standfirst__inner');
+  fStandy.innerHTML = pStandyWrapper.innerHTML;
+
+  console.log(fStandy);
+}
+
+getStandy();
+
+
 el.src = '<%= path %>/app.js';
 document.body.appendChild(el);
 

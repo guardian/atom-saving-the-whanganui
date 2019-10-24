@@ -1,0 +1,10 @@
+body.is-immersive {
+  .immersive-main-media__headline-container,
+  .content__standfirst--wrapper,
+  .content__hr {
+    display: none;
+  }
+  .immersive-header-container {
+    height: 90vw;
+  }
+}

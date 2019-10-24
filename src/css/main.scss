@@ -5,9 +5,17 @@
 // Uncomment for embeds
 //@import "embed";
 // Uncomment for full screen (including immersive article main media)
-//@import "fullscreen";
+@import "fullscreen";
 
+@import "header";
+
+
+body,
 .element-atom,
 .interactive-atom {
-    margin: 0 !important;
+  margin: 0 !important;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
 }
+
+
