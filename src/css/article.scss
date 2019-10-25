@@ -1,10 +1,20 @@
-body.is-immersive {
+body.is-immersive,
+body.ios,
+body.android {
   .immersive-main-media__headline-container,
   .content__standfirst--wrapper,
-  .content__hr {
-    display: none;
+  .content__hr,
+  .article__header-info,
+  .standfirst,
+   {
+    display: none !important;
   }
   .immersive-header-container {
     height: 90vw;
   }
+
+  .element-atom-hidden {
+    display: block;
+  }
 }
+

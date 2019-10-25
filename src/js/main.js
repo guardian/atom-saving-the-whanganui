@@ -15,7 +15,7 @@ injectStyle('article.css');
 function getStandy() {
 
   let parentBody = parent.document.body;
-  let pStandyWrapper = parentBody.querySelector('.content__standfirst--immersive-article');
+  let pStandyWrapper = parentBody.querySelector('.content__standfirst--immersive-article, .article__header .standfirst');
 
   let fStandy = document.querySelector('.whanganui__standfirst__inner');
   fStandy.innerHTML = pStandyWrapper.innerHTML;
